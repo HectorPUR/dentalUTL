@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de SW</title>
+    <link rel="stylesheet" href="css/miEstilo3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="imagenes/dienteLogo.jpg" alt="Dentist" id="logoImg">
+                <span class="fw-bold">Dentista</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instalaciones">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#precios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO/CARRUSEL -->
+     <header id="inicio">
+        <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button> 
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/consultorio.jpeg" class="d-block w-100" alt="Consultorio dental">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/consultorio1.jpeg" class="d-block w-100" alt="Atención dental profesional">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/consultorio2.jpeg" class="d-block w-100" alt="Equipo de especialistas dentales">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <div class="hero-contenido">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <div class="inicio-titulo">
+                            <h1 class="display-4 fw-bold">
+                                Cuida tu sonrisa
+                            </h1>
+                            <p>
+                                Contamos con especialistas comprometidos
+                                con tu salud bucal y la de toda tu familia.
+                            </p>
+                            <a href="#citas" class="btn btn-primary rounded-pill">Solicitar cita</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- CITAS -->
+    <!-- ESPECIALISTAS -->
+    <article id="especialistas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Servicios</h2>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="text-center border rounded p-4 h-100">
+                        <i class="bi bi-activity text-success mb-3 fs-1"></i>
+                        <h5>Endodoncia</h5>
+                        <p class="text-muted">
+                             Trata las enfermedades de la pulpa dental (el nervio) y 
+                             los tejidos que rodean la raíz del diente.    
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="text-center border rounded p-4 h-100">
+                        <i class="bi bi-braces text-warning mb-3 fs-1"></i>
+                        <h5>Ortodoncia</h5>
+                        <p class="text-muted">
+                             Corrige la posición de los dientes y la alineación 
+                             de los huesos maxilares.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="text-center border rounded p-4 h-100">
+                        <i class="bi bi-heart-pulse text-danger mb-3 fs-1"></i>
+                        <h5>Periodoncia</h5>
+                        <p class="text-muted">
+                             Previene, diagnostica y trata las enfermedades de 
+                             las encías y del hueso que sostiene los dientes, 
+                             además de colocar implantes dentales. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="text-center border rounded p-4 h-100">
+                        <i class="bi bi-emoji-smile text-info mb-3 fs-1"></i>
+                        <h5>Ondontopediatra</h5>
+                        <p class="text-muted">
+                             Atiende la salud bucal de bebés, niños y adolescentes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="text-center border rounded p-4 h-100">
+                        <i class="bi bi-wrench text-warning-emphasis mb-3 fs-1"></i>
+                        <h5>Cirugia Oral</h5>
+                        <p class="text-muted">
+                             Realiza intervenciones quirúrgicas en la boca, mandíbula, 
+                             cara y cuello (como extracción de muelas del juicio o traumatismos).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- CLINICA -->
+     <section id="instalaciones" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span>Nuestras instalaciones</span>
+                <h2 class="fw-bold">Conoce nuestra clinica</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imagenes/clinica.jpeg" class="card-img-top" alt="Clinica">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">Recepcion</h5>
+                            <p class="card-text small text-muted">
+                                Es la cara de la emprea, 
+                                siembre se le dara la mejor bienvenida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imagenes/clinica1.jpeg" class="card-img-top" alt="Clinica">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">Sala de Espera</h5>
+                            <p class="card-text small text-muted">
+                                Nosotros nos enfocamos en la comodidad en lo 
+                                que espera a ser atendida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imagenes/clinica2.jpeg" class="card-img-top" alt="Clinica">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">Consultorio</h5>
+                            <p class="card-text small text-muted">
+                                Siempre trabajando con tecnologia de punta, 
+                                de lo mas nuevo que hay siempre procurando u cuidado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imagenes/clinica3.jpeg" class="card-img-top" alt="Clinica">
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">Laboratotios</h5>
+                            <p class="card-text small text-muted">
+                                Siempre enfocados en ofrecer la mayor informacion 
+                                dando de todo para averiguar que tiene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </section>
+     <!-- SERVICIOS Y PRECIOS -->
+      <section id="precios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span>Nuestros tratamientos</span>
+                <h2 class="fw-bold">Servicios y precios</h2>
+                <p class="text-muted">
+                    Cuida tu sonrisa con atención profesional
+                    y tratamientos para toda la familia.
+                </p>
+            </div>
+            <div class="row g-4">
+                
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-emoji-smile icono-precio"></i>
+                            <h5 class="card-title mt-3">Limpieza dental</h5>
+                            <p class="card-text text-muted">
+                                Eliminación de placa y sarro.
+                            </p>
+                            <p class="precio">$500 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-search icono-precio"></i>
+                            <h5 class="card-title mt-3">Consulta general</h5>
+                            <p class="card-text text-muted">
+                                Revisión y diagnóstico bucal.
+                            </p>
+                            <p class="precio">$300 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-braces icono-precio"></i>
+                            <h5 class="card-title mt-3">Ortodoncia</h5>
+                            <p class="card-text text-muted">
+                                Valoración para alinear tus dientes.
+                            </p>
+                            <p class="precio">$700 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-stars icono-precio"></i>
+                            <h5 class="card-title mt-3">Blanqueamiento</h5>
+                            <p class="card-text text-muted">
+                                Tratamiento estético dental.
+                            </p>
+                            <p class="precio">$1,500 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-heart-pulse icono-precio"></i>
+                            <h5 class="card-title mt-3">Endodoncia</h5>
+                            <p class="card-text text-muted">
+                                Tratamiento del nervio dental.
+                            </p>
+                            <p class="precio">$2,000 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check icono-precio"></i>
+                            <h5 class="card-title mt-3">Aplicación de flúor</h5>
+                            <p class="card-text text-muted">
+                                Protección adicional contra caries.
+                            </p>
+                            <p class="precio">$350 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-emoji-smile-upside-down icono-precio"></i>
+                            <h5 class="card-title mt-3">Odontopediatría</h5>
+                            <p class="card-text text-muted">
+                                Atención dental para niños.
+                            </p>
+                            <p class="precio">$400 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+     
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bandaid icono-precio"></i>
+                            <h5 class="card-title mt-3">Extracción dental</h5>
+                            <p class="card-text text-muted">
+                                Extracción simple previa valoración.
+                            </p>
+                            <p class="precio">$700 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-brightness-high icono-precio"></i>
+                            <h5 class="card-title mt-3">Resina dental</h5>
+                            <p class="card-text text-muted">
+                                Restauración de dientes con caries.
+                            </p>
+                            <p class="precio">$600 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card tarjeta-precio h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-clipboard2-pulse icono-precio"></i>
+                            <h5 class="card-title mt-3">Valoración de implante</h5>
+                            <p class="card-text text-muted">
+                                Evaluación para reemplazar un diente.
+                            </p>
+                            <p class="precio">$600 <small>MXN</small></p>
+                            <a href="#citas" class="btn btn-outline-primary rounded-pill">
+                                Solicitar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>   
+    <!-- EQUIPO -->
+    <section id="equipo" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span>Nuestro equipo</span>
+                <h2 class="fw-bold">Los profesionales dentales</h2>
+                <p class="text-muted">
+                    Especialistas comprometidos con el cuidado
+                    de tu salud bucal.
+                </p>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta-equipo h-100 text-center">
+                        <img src="imagenes/dentista1.jpeg"
+                            class="foto-equipo"
+                            alt="Dra. Andrea Martínez">
+                        <div class="card-body">
+                            <h5 class="nombre-doctor">Dra. Andrea Martínez</h5>
+                            <p class="text-muted small">
+                                Odontología estética
+                            </p>
+                            <a href="#citas"
+                            class="btn btn-primary btn-sm rounded-pill">
+                                Reservar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta-equipo h-100 text-center">
+                        <img src="imagenes/dentista2.jpeg"
+                            class="foto-equipo"
+                            alt="Dr. Carlos Ramírez">
+                        <div class="card-body">
+                            <h5 class="nombre-doctor">Dr. Carlos Ramírez</h5>
+                            <p class="text-muted small">
+                                Odontopediatría
+                            </p>
+                            <a href="#citas"
+                            class="btn btn-primary btn-sm rounded-pill">
+                                Reservar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta-equipo h-100 text-center">
+                        <img src="imagenes/dentista3.jpeg"
+                            class="foto-equipo"
+                            alt="Dra. Sofía Hernández">
+                        <div class="card-body">
+                            <h5 class="nombre-doctor">Dra. Sofía Hernández</h5>
+                            <p class="text-muted small">
+                                Ortodoncia
+                            </p>
+                            <a href="#citas"
+                            class="btn btn-primary btn-sm rounded-pill">
+                                Reservar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="card tarjeta-equipo h-100 text-center">
+                        <img src="imagenes/dentista4.jpeg"
+                            class="foto-equipo"
+                            alt="Dr. Daniel Torres">
+                        <div class="card-body">
+                            <h5 class="nombre-doctor">Dr. Daniel Torres</h5>
+                            <p class="text-muted small">
+                                Cirugía oral
+                            </p>
+                            <a href="#citas"
+                            class="btn btn-primary btn-sm rounded-pill">
+                                Reservar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+ <footer id="contacto" class="bg-dark text-white p-4">
+    <div class="container">
+        <p>2026 Dentista blvd Aeropuerto #5000</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="" class="fs-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="" class="fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="fs-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="" class="fs-4">
+              <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+    </div>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
